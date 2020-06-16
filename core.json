@@ -1,0 +1,9 @@
+{
+  "description": "MySQL Database",
+  "maintenanceEffects": [
+    "Migrations can be run"
+  ],
+  "updateEffects": [
+    "Unprotected local databases will be migrated"
+  ]
+}

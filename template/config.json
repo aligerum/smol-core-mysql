@@ -1,0 +1,9 @@
+{
+  "name": "dbname",
+  "host": "localhost",
+  "user": "dbuser",
+  "pass": "secret",
+  "protected": true,
+  "migrationTable": "migration",
+  "outputQueries": false
+}

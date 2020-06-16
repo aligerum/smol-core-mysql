@@ -1,0 +1,23 @@
+{
+  "name": "smol-core-mysql",
+  "version": "0.1.0",
+  "description": "MySQL Core for smol",
+  "main": "main.js",
+  "keywords": [
+    "database",
+    "core",
+    "mysql",
+    "smol"
+  ],
+  "author": "Allister Aligerum",
+  "repository": "github:aligerum/smol-core-mysql",
+  "homepage": "https://smol.aligerum.io",
+  "bugs": "allister@aligerum.io",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "moment": "^2.26.0",
+    "mysql": "^2.18.1",
+    "smol": "github:aligerum/smol"
+  }
+}
