@@ -8,7 +8,8 @@ module.exports = {
       to: filename => `model/${filename}.js`,
       parse: template => {
         return smol.string.replace(template.content, {
-          tableName: template.filename
+          modelName: smol.string.studlyCase(template.filename),
+          tableName: template.filename,
         })
       }
     }
