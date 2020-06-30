@@ -55,12 +55,19 @@ Models can be accessed by their model name within the smolCoreMysql.Model class.
 const Image = require('smol-core-mysql').Model.models.testDb.image
 ```
 
-# Querying Data
-
-You can get data from the database by building queries using the Model class. Each model class is retrieved using `smolCoreMysql.model('coreName/modelName')`.
+This is useful for getting a full list of available models by iterating through the `models` object, but for convenience, you can use the `models()` shortcut method. For example:
 
 ```js
-const User = require('smol-core-mysql').Model.models.testDb.user
+const smolCoreMysql = require('smol-core-mysql')
+const Image = smolCoreMysql.model('testDb/image')
+```
+
+# Querying Data
+
+You can get data from the database by building queries using the Model class.
+
+```js
+const User = require('smol-core-mysql').model('testDb/user')
 
 let user = await User.where('email', 'user@example.com').first()
 user = User.find(1)
